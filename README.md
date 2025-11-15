@@ -1,78 +1,95 @@
-# NYC Airbnb 2019 Data Analysis
-**Author:** Kumar Karthik Ankasandra Naveen  
-**Language:** R  
-**Project Type:** Data Cleaning, EDA, Statistical Analysis  
+# 📊 NYC Airbnb Listings Analysis
+
+This project analyzes the 2019 NYC Airbnb dataset to understand pricing trends, room type differences, neighborhood patterns, and statistical relationships.
 
 ---
 
-## Overview
-This project analyzes the NYC Airbnb 2019 dataset.  
-It includes:
-
-- Data cleaning  
-- Exploratory data analysis  
-- Visualizations  
-- Statistical tests (t-tests, correlation, regression, ANOVA)
-
-The goal is to understand how listing price varies by neighborhood, room type, reviews, and availability.
+## 🚀 Project Overview
+- Cleaned and prepared Airbnb listings data  
+- Explored distributions (price, room type, neighborhood)  
+- Mapped listing locations  
+- Conducted hypothesis testing and regression  
+- Exported plots to the `/images` folder  
 
 ---
 
-## What This Project Does
-- Cleans and prepares raw Airbnb data  
-- Explores distributions and pricing patterns  
-- Compares boroughs (Manhattan vs Brooklyn)  
-- Compares room types  
-- Evaluates relationships between reviews, availability, and price  
-- Tests if the average price differs from a benchmark value  
-- Uses regression and ANOVA for deeper insights  
-
----
-
-## Main Files
+## 📁 Project Structure
 ```
-nyc_airbnb_analysis.R   # Final analysis script
-AB_NYC_2019.csv         # Dataset 
-images/                 # Folder for plot images
+airbnb_analysis.R        # Main analysis script
+AB_NYC_2019.csv          # Dataset
+images/                  # All generated plots
+README.md                # Documentation
 ```
 
 ---
 
-## Example Visuals (Optional)
-Add these images to an `/images` folder if you want:
+# 📊 Key Visuals
 
-- Neighborhood distribution  
-- Room type distribution  
-- Price histogram  
-- Price by room type boxplot  
-- Manhattan vs Brooklyn comparison  
-
-```
-![Price Histogram](images/price_histogram.png)
-```
-
-(If you don’t add images, GitHub will simply ignore the links.)
+### 🏙️ Neighbourhood Distribution  
+![Neighbourhood Distribution](images/neighbourhood_distribution.png)  
+Path: `images/neighbourhood_distribution.png`
 
 ---
 
-## Key Findings (Short Version)
-- Manhattan listings are significantly more expensive than Brooklyn  
-- Entire homes/apts cost more than private or shared rooms  
-- Average NYC Airbnb price ≈ **$133**, not $150  
-- Reviews and availability have **very weak** correlation with price  
-- Room type strongly affects price (confirmed by ANOVA)
+### 🏠 Room Type Distribution  
+![Room Type Distribution](images/room_type_distribution.png)  
+Path: `images/room_type_distribution.png`
 
 ---
 
-## How to Run
-1. Download the R script  
-2. Place the dataset (`AB_NYC_2019.csv`) in the same folder  
-3. Run in R or RStudio:  
+### 💲 Price Distribution  
+![Price Histogram](images/price_histogram.png)  
+Path: `images/price_histogram.png`
+
+---
+
+### 🧪 Room Type ANOVA  
+![Room Type ANOVA](images/room_type_anova.png)  
+Path: `images/room_type_anova.png`
+
+---
+
+# 🧪 Statistical Highlights
+
+### 1️⃣ Manhattan vs Brooklyn Prices  
+Path: `images/manhattan_brooklyn_box.png`
+
+### 2️⃣ Entire Home vs Private Room  
+Path: `images/entire_vs_private_box.png`
+
+### 3️⃣ Reviews vs Availability  
+Path: `images/reviews_availability_scatter.png`
+
+### 4️⃣ Reviews vs Price  
+Path: `images/reviews_price_scatter.png`
+
+### 5️⃣ Availability vs Price  
+Path: `images/availability_price_scatter.png`
+
+---
+
+## 🔧 Technologies Used
+- R  
+- tidyverse, janitor  
+- Base R graphics  
+
+---
+
+## 📌 How to Run
+Clone repo:
+```bash
+git clone git@github.com:kumarkarthik23/NYC_Airbnb_Analysis.git
+```
+
+Run analysis:
 ```r
-source("nyc_airbnb_analysis.R")
+source("airbnb_analysis.R")
 ```
+
+Plots will be stored under `/images`.
 
 ---
 
-## License
-This project is for educational and portfolio purposes.
+## 👤 Author
+**Kumar Karthik Ankasandra Naveen**  
+ALY6010 — Probability Theory & Intro Stats
